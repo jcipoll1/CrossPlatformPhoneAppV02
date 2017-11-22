@@ -8,6 +8,8 @@ function getWeatherWithZipCode() {
         'http://api.openweathermap.org/data/2.5/weather?zip='
         + zipcode + ',us&appid=' + OpenWeatherAppKey + '&units=imperial';
 
+    queryString = 'http://raspi/time.json';
+
     $.getJSON(queryString, function (results) {
 
         showWeatherData(results);
